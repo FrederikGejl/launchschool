@@ -1,0 +1,18 @@
+isBlank('mars'); // false
+isBlank('  ');   // false
+isBlank('');     // true
+
+
+
+
+
+function isBlank(string) {
+  return string.length === 0;
+}
+
+
+if (isBlank.length === 0) {
+    console.log("String is empty.");
+} else {
+    console.log("String is not empty.");
+}

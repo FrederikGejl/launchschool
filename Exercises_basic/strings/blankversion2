@@ -1,0 +1,11 @@
+isBlank('mars'); // false
+isBlank('  ');   // true
+isBlank('');     // true
+
+
+
+
+
+function isBlank(string) {
+  return string.trim().length === 0;
+}

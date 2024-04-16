@@ -1,0 +1,3 @@
+let myArray = ['fish', 'and', 'chips']
+
+console.log(myArray[10]);

@@ -1,0 +1,12 @@
+false || (true && false); // true // rettet = false
+true || (1 + 2); // true // // korrekt
+(1 + 2) || true; // true // 3 rettet 
+true && (1 + 2); // true // 3 rettet 
+false && (1 + 2); // false // korrekt
+(1 + 2) && true; // true // korrekt 
+(32 * 4) >= 129; // false // korrekt
+false !== !true; // false rettet
+true === 4; // true // false rettet
+false === (847 === '847'); // true / korrekt
+false === (847 == '847'); // false / korrekt
+(!true || (!(100 / 5) === 20) || ((328 / 4) === 82)) || false; // true /

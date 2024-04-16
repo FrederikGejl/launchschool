@@ -1,0 +1,15 @@
+function cite(author, quote) {
+  return author + quote;
+
+}
+
+console.log(cite('Brendan Eich', ' Always bet on JavaScript.'));
+
+
+
+
+function cite(author, quote) {
+  console.log(`${author} said: "${quote}"`);
+}
+
+cite('Brendan Eich', 'Always bet on JavaScript.');

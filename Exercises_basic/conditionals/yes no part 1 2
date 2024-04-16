@@ -1,0 +1,15 @@
+let randomNumber = Math.round(Math.random());
+
+if (randomNumber === 1) {
+console.log("Yes") 
+}
+  else {
+  console.log("no")
+  }
+
+
+  // yes no part 2
+
+  // condition ? expression1 : expression2
+
+randomNumber === 1 ? console.log("Yes") : console.log("No");

@@ -1,0 +1,13 @@
+function greet(greeting) {
+  console.log(greeting || 'Hello' + ', world!');
+}
+
+greet('Salutations'); // logs: Salutations, world!
+
+greet();              // logs: undefined, world!
+                      // should log: Hello, world!
+
+
+  function greet(greeting = 'Hello') {
+  console.log(greeting + ', world!');
+}

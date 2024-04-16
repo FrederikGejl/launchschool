@@ -1,0 +1,7 @@
+let string = "Captain Ruby" 
+
+let newstring = string.replace("Ruby","Javascript")
+console.log(newstring);
+
+console.log(string.indexOf("R"));
+console.log(string.slice(8,12));

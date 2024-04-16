@@ -1,0 +1,9 @@
+let tweet = 'Starting to get the hang of it... #javascript #launchschool';
+
+
+// What will the following statements evaluate to?
+
+
+console.log(tweet.split(' ')); //array med en lang string? opdelt efter mellemrum
+console.log(tweet.split(' ').reverse()); // samme som 1, bare vendt om
+console.log(tweet.split(' ').reverse().join(' ')); // Et langt array på index [0], stadig vendt om - stadig et array, på trods af det ligner en string  

@@ -1,0 +1,12 @@
+let trees = ['birch', 'pine', 'sequoia', 'palm tree'];
+
+trees[trees.length - 1]; /// 3 
+trees.pop();
+console.log(trees[trees.length - 1])  /// 2
+
+
+let trees = ['birch', 'pine', 'sequoia', 'palm tree'];
+
+trees[trees.length - 1]; // 'palm tree'
+trees.pop();              // 'palm tree'
+trees[trees.length - 1]; // 'sequoia'

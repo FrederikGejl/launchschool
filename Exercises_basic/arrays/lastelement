@@ -1,0 +1,13 @@
+last(['Earth', 'Moon', 'Mars']); // 'Mars'
+
+
+let first = ['earth', 'moon', 'mars'];
+
+
+
+function last (array) {
+
+  return array[2]
+}
+
+console.log(last(first))

@@ -1,0 +1,5 @@
+let tweet = 'Woohoo! :-)asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd';
+
+if (tweet.length > 1) {
+  console.log('Tweet is too long!');
+}

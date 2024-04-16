@@ -1,0 +1,14 @@
+let first = ['earth', 'moon', 'mars'];
+
+
+
+function first (array) {
+
+  return array[0]
+}
+
+don(first);
+console.log(first)
+
+
+first(['Earth', 'Moon', 'Mars']); // 'Earth'

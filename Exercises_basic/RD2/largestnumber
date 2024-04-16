@@ -1,0 +1,7 @@
+const biggestInt = Number.MAX_SAFE_INTEGER;
+
+console.log(biggestInt);
+
+let number1 = Number.MAX_VALUE;
+
+console.log(number1)

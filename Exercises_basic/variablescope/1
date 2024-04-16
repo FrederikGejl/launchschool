@@ -1,0 +1,14 @@
+console.log(greeting);
+
+var greeting = 'Hello world!';
+
+
+
+
+// svar - hoisting
+
+var greeting;
+
+console.log(greeting);
+
+greeting = 'Hello world!'

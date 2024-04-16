@@ -1,0 +1,35 @@
+let myArray = [
+  1, 3, 6, 11,
+  4, 2, 4, 9,
+  17, 16, 0,
+];
+
+
+let newArray = myArray.map(function(value) {
+  if (value % 2 === 0) {
+    return 'even';
+  } else {
+    return 'odd';
+  }
+});
+
+
+console.log(newArray)
+
+
+
+
+// Define the function convertToUppercase
+function convertToUppercase(stringsArray) {
+  // Use the map function to iterate over each string in the array
+  // and convert it to uppercase using the toUpperCase method
+  // Return the new array with uppercase strings
+  return stringsArray.map(function(string) {
+    return string.toUpperCase();
+  });
+}
+
+// Example usage:
+const strings = ['hello', 'world', 'javascript'];
+const uppercaseStrings = convertToUppercase(strings);
+console.log(uppercaseStrings); // Output: ['HELLO', 'WORLD', 'JAVASCRIPT']

@@ -1,0 +1,7 @@
+How many arguments does the Array.prototype.join() method expect? 
+
+What happens if you call it with less or more arguments?
+
+One, a seperator argument.
+
+IF you call it without argument the array elements are seperated with a comma

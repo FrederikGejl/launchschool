@@ -1,0 +1,11 @@
+function quote (hej) {
+
+  return "Always bet on javascript"
+
+}
+
+console.log(quote())
+
+function brendanEichQuote() {
+  console.log('Always bet on JavaScript.');
+}
