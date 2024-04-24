@@ -1,0 +1,55 @@
+function math() {
+
+const readlineSync = require('readline-sync');
+let num1 = readlineSync.question('Enter first number:');
+let num2 = readlineSync.question('Enter second number:');
+
+let cnum1 = parseInt(num1);  // Convert to integer
+let cnum2 = parseInt(num2);  // Convert to integer
+
+
+
+let resultplus = cnum1 + cnum2;
+
+let resultminus = cnum1 - cnum2;
+
+let resultmultiply = cnum1 * cnum2;
+
+let resultdivision = cnum1 / cnum2;
+
+let resultpercentage = cnum1 % cnum2;
+
+let resultdouble = cnum1 ** cnum2;
+
+console.log(`${cnum2} + ${cnum1} = ${resultplus}`)
+console.log(`${cnum2} - ${cnum1} = ${resultminus}`)
+console.log(`${cnum2} * ${cnum1} = ${resultmultiply}`)
+console.log(`${cnum2} / ${cnum1} = ${resultdivision}`)
+console.log(`${cnum2} % ${cnum1} = ${resultpercentage}`)
+console.log(`${cnum2} ** ${cnum1} = ${resultdouble}`)
+
+
+
+
+
+}
+
+
+math()
+
+
+const readlineSync = require("readline-sync");
+
+console.log("Enter the first number:");
+let firstNumber = Number(readlineSync.prompt());
+console.log("Enter the second number:");
+let secondNumber = Number(readlineSync.prompt());
+
+console.log(`${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}`);
+console.log(`${firstNumber} - ${secondNumber} = ${firstNumber - secondNumber}`);
+console.log(`${firstNumber} * ${secondNumber} = ${firstNumber * secondNumber}`);
+console.log(`${firstNumber} / ${secondNumber} = ${Math.floor(firstNumber / secondNumber)}`);
+console.log(`${firstNumber} % ${secondNumber} = ${firstNumber % secondNumber}`);
+console.log(
+  `${firstNumber} ** ${secondNumber} = ${Math.pow(firstNumber, secondNumber)}`
+);

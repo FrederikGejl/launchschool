@@ -1,0 +1,55 @@
+
+function xor(value1, value2) {
+  if ((value1 && !value2) || (value2 && !value1)) {
+    return true;
+  }
+  return false;
+}
+
+
+console.log(xor(5, 0) === true);          // true
+console.log(xor(false, true) === true);   // true
+console.log(xor(1, 1) === false);         // true
+console.log(xor(true, true) === false);   // true
+console.log(xor(0, false) === false);     // true
+console.log(xor(0, 0) === false);         // true
+
+
+function xor(value1, value2) {
+  return Boolean((value1 && !value2) || (value2 && !value1));
+}
+¨
+/*
+
+Relating to the Staircase Light Switch Analogy
+In the example of a light at the top of a flight of stairs controlled by switches at both the top and the bottom:
+
+Each switch can change the state of the light from on to off or vice versa.
+The xor configuration means the light will change state whenever one switch is flipped, regardless of the position of the other switch. 
+Flipping one switch on while the other is off turns the light on, and flipping it again turns it off, no matter the state of the other switch.
+This behavior mirrors the xor logic: the light's state changes only when the actions (inputs) at the two switches differ (one is on, the other is off).
+
+
+
+
+Logical OR (||) with Staircase Light Switches
+Imagine you have a light at the top of a staircase, and there are switches at both the bottom and the top of the stairs that can control this light.
+
+Scenario using OR logic (||): The light turns on if either switch is turned on. It doesn’t matter if one or both switches are on; as long as at least one switch is on, the light will be on.
+How it relates to ||: In programming, || returns true if either of its operands is true. If switch1 or switch2 is on (true), the light stays on. The expression (switch1 || switch2) evaluates to true (light on) if either switch1 or switch2 is true.
+Logical AND (&&) with Staircase Light Switches
+Now, consider a scenario where both switches need to be in agreement for the light to change state.
+
+Scenario using AND logic (&&): The light turns on only if both switches are turned on at the same time. If either or both switches are off, the light remains off.
+How it relates to &&: In programming, && returns true only if both operands are true. Here, (switch1 && switch2) only evaluates to true (light on) if both switch1 and switch2 are true.
+Practical Examples
+Logical OR (||):
+Usage: This might be used in a garage lighting system where there are multiple doors into the garage, and you want the lights to turn on if any door is opened.
+Expression: door1Open || door2Open turns on the lights.
+Logical AND (&&):
+Usage: Consider a system where you want a machine to operate only if two safety switches are activated. This ensures that the machine only runs under safe conditions.
+Expression: safetySwitch1 && safetySwitch2 allows the machine to operate.
+These analogies help visualize how logical operators integrate multiple conditions to control outcomes, similar to how multiple switch inputs might control a single light in real-life scenarios.
+
+
+*/

@@ -1,0 +1,5 @@
+let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+let words = alphabet.split('');
+
+console.log(words)

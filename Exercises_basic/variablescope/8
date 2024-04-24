@@ -1,0 +1,11 @@
+let a = 1;
+
+function myFunction(a) {
+  console.log(a);
+}
+
+let b = 2;
+
+myFunction(b);
+
+//A 1 bliver logget, efter ændres parameteren til 2 og funktionen bliver kørt.. Funktionen logger 2 

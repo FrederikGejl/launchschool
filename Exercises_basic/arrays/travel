@@ -1,0 +1,34 @@
+let destinations = ['Prague', 'London', 'Sydney', 'Belfast', 'Rome',
+  'Aruba', 'Paris', 'Bora Bora', 'Barcelona', 'Rio de Janeiro',
+  'Marrakesh', 'New York City'];
+
+ function checkDestinations(city) {
+  for (let index = 0; index < destinations.length; index++) {
+    const element = destinations[index];
+    if (element === city) { // Check if the current element is equal to the input city
+      return true; // If it is, return true and exit the function
+    }
+  }
+  return false; // If the loop completes without finding the city, return false
+}
+
+console.log(checkDestinations('Copenhagen')); // Output: true
+
+
+
+let destinations = ['Prague', 'London', 'Sydney', 'Belfast', 'Rome',
+  'Aruba', 'Paris', 'Bora Bora', 'Barcelona', 'Rio de Janeiro',
+  'Marrakesh', 'New York City'];
+
+
+function contains(element, list) {
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] === element) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+console.log(contains('Prague',destinations))

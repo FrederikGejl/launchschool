@@ -1,0 +1,69 @@
+catAge(0); // 0
+calculateCatYears(1); // 15
+catAge(2); // 24
+catAge(3); // 28
+catAge(4); // 32
+
+
+
+function calculateCatYears(humanYears) {
+    let catYears = 0;
+
+    switch (humanYears) {
+        case 1:
+            catYears += 15;
+            break;
+        case 2:
+            catYears += 15 + 9;
+            break;
+        default:
+            catYears += 15 + 9 + (humanYears - 2) * 4;
+            break;
+    }
+
+    return catYears;
+}
+
+
+console.log(calculateCatYears(1)); // 15
+console.log(calculateCatYears(5)); // Output: 36
+console.log(calculateCatYears(34)); // Output: 36
+
+// Example usage:
+console.log(calculateCatYears(1)); // Output: 15
+console.log(calculateCatYears(2)); // Output: 24
+console.log(calculateCatYears(3)); // Output: 28
+console.log(calculateCatYears(4)); // Output: 32
+console.log(calculateCatYears(5)); // Output: 36
+
+
+
+
+
+A function that takes a number of human years and afterwards convert them into cat years. The first year count for 15 cat years, second 9 cat years, 
+subsequent 4 cat years. 
+
+Something that loops trough humanYears and add 15 cat years for the first year, 9 cat years for the 2nd year and 4 for anything subsequent. 
+break when the approriate number of catyears has been added. 
+
+function humanToCat(humanYears) {
+
+if (humanYears ) {
+  
+}
+
+}
+
+
+function catAge(humanYears) {
+  switch(humanYears) {
+    case 0:
+      return 0;
+    case 1:
+      return 15;
+    case 2:
+      return 24;
+    default:
+      return 24 + (humanYears - 2) * 4;
+  }
+} 

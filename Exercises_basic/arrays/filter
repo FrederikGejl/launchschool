@@ -1,0 +1,12 @@
+let scores = [96, 47, 113, 89, 100, 102];
+
+
+let countAbove100 = 0; // Initialize a counter for numbers above 100
+
+for (let i = 0; i < scores.length; i++) {
+  if (scores[i] > 100) {
+    countAbove100++; // Increment the counter if the score is above 100
+  }
+}
+
+console.log("Total numbers above 100:", countAbove100); // Output the total count

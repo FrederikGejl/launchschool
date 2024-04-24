@@ -1,0 +1,27 @@
+let vocabulary = [
+  ['happy', 'cheerful', 'merry', 'glad'],
+  ['tired', 'sleepy', 'fatigued', 'drained'],
+  ['excited', 'eager', 'enthused', 'animated']
+];
+
+
+for (let vocabularyIdx = 0; vocabularyIdx < vocabulary.length; vocabularyIdx++) {
+  let synonyms = vocabulary[vocabularyIdx];
+
+  for (let synonymIdx = 0; synonymIdx < synonyms.length; synonymIdx++) {
+    console.log(synonyms[synonymIdx]);
+  }
+}
+
+let subarray1 = vocabulary[0]
+let subarray2 = vocabulary[1]
+let subarray3 = vocabulary[2]
+
+console.log(subarray3)
+
+for (let index = 0; index < array.length; index++) {
+  const element = array[index];
+  
+}
+
+

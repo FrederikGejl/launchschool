@@ -1,0 +1,7 @@
+if (true) {
+  let myValue = 20;
+}
+
+console.log(myValue);
+
+//not found? reference error

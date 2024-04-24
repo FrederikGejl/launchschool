@@ -10,4 +10,4 @@ function last (array) {
   return array[2]
 }
 
-console.log(last(first))
+console.log(last(first))  

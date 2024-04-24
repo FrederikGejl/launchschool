@@ -1,0 +1,14 @@
+removeLastChar('ciao!'); // 'ciao'
+removeLastChar('hello'); // 'hell'
+
+function removeLastChar(word) {
+  word = word.slice(0,-1);
+  console.log(word)
+}
+
+removeLastChar('frede')
+
+
+function removeLastChar(string) {
+  return string.substring(0, string.length - 1);
+}
