@@ -18,11 +18,13 @@ Steps:
 */
 
 const readline = require("readline-sync");
-
+let answer = ''; // Define answer outside the loop
 function prompt(message) {
   console.log(`=> ${message}`);
 
 }
+
+do {
 
 prompt("Welcome to Calculator!");
 
@@ -55,7 +57,7 @@ while (!['1', '2', '3', '4'].includes(operation)) {
 
 let output;
 switch (operation) {
-  case '1';
+  case '1':
     output = Number(number1) + Number(number2);
     break;
   case '2':
@@ -71,3 +73,9 @@ switch (operation) {
 
 
 prompt(`The result is: ${output}`);
+
+ // Ask the user if they want to perform another calculation
+  prompt("Do you want to perform another calculation? (yes/no)");
+  answer = readline.question()
+
+} while (answer === 'yes' || answer === 'y');
