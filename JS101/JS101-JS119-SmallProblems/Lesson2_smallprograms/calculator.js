@@ -16,6 +16,8 @@ Steps:
 // Print the result to the terminal.
 
 */
+const MESSAGES = require('./calculator_messages.json')
+
 
 const readline = require("readline-sync");
 let answer = ''; // Define answer outside the loop
@@ -26,7 +28,8 @@ function prompt(message) {
 
 do {
 
-prompt("Welcome to Calculator!");
+prompt(MESSAGES['welcome']);
+
 
 prompt("What's the first number?");
 let number1 = readline.question();
